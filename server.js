@@ -60,7 +60,7 @@ apiRoutes.get('/users',(req,res)=>{
     })
 })
 
-apiRoutes.post('/authenticate', function(req, res) {
+apiRoutes.post('/authenticate', (req, res) => {
 	//Busca un usuario
 	User.findOne({
 		name: req.body.name

@@ -2,7 +2,7 @@ const jwt = require('jwt-simple');
 const moment = require('moment');
 const config = require('./config');
 
-exports.ensureAuthenticated = function(req,res,next){
+exports.ensureAuthenticated = (req,res,next)=>{
     if(!req.headers.authorization){
         return res
         .status(403)
