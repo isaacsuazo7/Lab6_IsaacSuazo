@@ -64,7 +64,7 @@ apiRoutes.post('/authenticate', (req, res) => {
 	//Busca un usuario
 	User.findOne({
 		name: req.body.name
-	}, function(err, user) {
+	}, (err, user)=> {
 
 	if (err) throw err;
 
